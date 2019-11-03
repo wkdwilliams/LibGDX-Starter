@@ -1,25 +1,22 @@
 package com.mygdx.game;
 
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.mygdx.game.Core.GameObject;
+import com.mygdx.game.Core.GameWorld;
 
 public class Level1 extends GameWorld {
 
-    private Sprite image;
+    BadLogic badLogic;
 
     @Override
     public void start() {
-        image = new Sprite(new Texture("badlogic.jpg"));
-        image.setBounds(0, 0, 5, 5);
-
+        badLogic = new BadLogic();
     }
 
     @Override
     public void update(float deltaTime) {
-        image.draw(spriteBatch);
+        
     }
-
 
 }
